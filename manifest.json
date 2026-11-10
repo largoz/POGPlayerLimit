@@ -1,0 +1,10 @@
+{
+  "name": "POG_Player_Limit",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/largoz/POGPlayerLimit",
+  "description": "Set how many players a lobby you host takes, from 1 to 64 (the game's own limit is 6). Only the host needs it. Slider in POG Config.",
+  "dependencies": [
+    "LavaGang-MelonLoader-0.7.2",
+    "Largo-POG_Config-1.1.0"
+  ]
+}

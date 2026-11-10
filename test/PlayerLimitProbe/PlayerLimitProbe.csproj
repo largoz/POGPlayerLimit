@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Test driver for POG Player Limit: copied into the profile's Mods/ for one run by
+       run_probe.sh and removed afterwards. Never ship it. -->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>PlayerLimitProbe</AssemblyName>
+    <GameDir Condition="'$(GameDir)' == ''">$(HOME)/.local/share/com.kesomannen.gale/pit-of-goblin/profiles/Default</GameDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MelonLoader"><HintPath>$(GameDir)\MelonLoader\net6\MelonLoader.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppInterop.Runtime"><HintPath>$(GameDir)\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2Cppmscorlib"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.Netcode.Runtime"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Unity.Netcode.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.Collections"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Unity.Collections.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppPlatform"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Il2CppPlatform.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppEOS"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Il2CppEOS.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2Cppcom.Epic.OnlineServices"><HintPath>$(GameDir)\MelonLoader\Il2CppAssemblies\Il2Cppcom.Epic.OnlineServices.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
